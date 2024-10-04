@@ -20,10 +20,10 @@
         "expected": "术一獲得",
         "action": "Click",
         "next": [
-            "关闭每日公告"
+            "关闭"
         ]
     },
-    "关闭每日公告": {
+    "关闭": {
         "recognition": "TemplateMatch",
         "template": "关闭.jpg",
         "action": "Click"
@@ -62,6 +62,7 @@
         ],
         "expected": "次",
         "action": "Click",
+        "post_delay": 200,
         "next": [
             "继续挑战"
         ]
@@ -74,9 +75,13 @@
             178,
             50
         ],
-        "template": "继续挑战.jpg",
+        "template": "返回.jpg",
         "threshold": 0.8,
-        "action": "Click"
+        "action": "Click",
+        "post_delay": 200,
+        "next": [
+            "加倍"
+        ]
     },
     "加倍": {
         "recognition": "TemplateMatch",
@@ -89,9 +94,24 @@
         "template": "加倍.jpg",
         "action": "Click",
         "next": [
+            "都不够",
             "10倍",
             "券不足",
             "加倍"
+        ]
+    },
+    "都不够": {
+        "recognition": "OCR",
+        "roi": [
+            647,
+            201,
+            73,
+            44
+        ],
+        "expected": "不足",
+        "post_delay": 200,
+        "next": [
+            "确认"
         ]
     },
     "券不足": {
