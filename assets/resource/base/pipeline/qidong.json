@@ -27,5 +27,110 @@
         "recognition": "TemplateMatch",
         "template": "关闭.jpg",
         "action": "Click"
+    },
+    "挑战准备": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            950,
+            531,
+            123,
+            49
+        ],
+        "template": "准备.jpg",
+        "threshold": 0.8,
+        "action": "Click"
+    },
+    "协力参加": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            981,
+            654,
+            188,
+            50
+        ],
+        "template": "协力参加.jpg",
+        "threshold": 0.8,
+        "action": "Click"
+    },
+    "下一回合": {
+        "recognition": "OCR",
+        "roi": [
+            570,
+            629,
+            85,
+            47
+        ],
+        "expected": "次",
+        "action": "Click",
+        "next": [
+            "继续挑战"
+        ]
+    },
+    "继续挑战": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            660,
+            627,
+            178,
+            50
+        ],
+        "template": "继续挑战.jpg",
+        "threshold": 0.8,
+        "action": "Click"
+    },
+    "加倍": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            683,
+            343,
+            32,
+            34
+        ],
+        "template": "加倍.jpg",
+        "action": "Click",
+        "next": [
+            "10倍",
+            "券不足",
+            "加倍"
+        ]
+    },
+    "券不足": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            464,
+            352,
+            280,
+            44
+        ],
+        "template": "券不足.jpg",
+        "post_delay": 200,
+        "next": [
+            "确认"
+        ]
+    },
+    "10倍": {
+        "recognition": "OCR",
+        "roi": [
+            590,
+            263,
+            68,
+            43
+        ],
+        "expected": "250",
+        "post_delay": 200,
+        "next": [
+            "确认"
+        ]
+    },
+    "确认": {
+        "recognition": "OCR",
+        "roi": [
+            706,
+            474,
+            84,
+            54
+        ],
+        "expected": "OK",
+        "action": "Click"
     }
 }
