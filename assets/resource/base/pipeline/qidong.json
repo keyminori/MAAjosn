@@ -1,0 +1,31 @@
+{
+    "每日登录游戏": {
+        "recognition": "OCR",
+        "expected": "TAPTOSTART",
+        "action": "Click",
+        "next": [
+            "领取登录奖励1"
+        ]
+    },
+    "领取登录奖励1": {
+        "recognition": "OCR",
+        "expected": "术一獲得",
+        "action": "Click",
+        "next": [
+            "领取登录奖励2"
+        ]
+    },
+    "领取登录奖励2": {
+        "recognition": "OCR",
+        "expected": "术一獲得",
+        "action": "Click",
+        "next": [
+            "关闭每日公告"
+        ]
+    },
+    "关闭每日公告": {
+        "recognition": "TemplateMatch",
+        "template": "关闭.jpg",
+        "action": "Click"
+    }
+}

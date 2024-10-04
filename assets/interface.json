@@ -11,7 +11,7 @@
             "type": "Win32",
             "win32": {
                 "class_regex": ".*",
-                "window_regex": "Visual Studio"
+                "window_regex": "konosuba"
             }
         }
     ],
@@ -32,8 +32,8 @@
     ],
     "task": [
         {
-            "name": "收取荒原",
-            "entry": "Wilderness"
+            "name": "每日登录",
+            "entry": "每日登录游戏"
         },
         {
             "name": "每日心相（意志解析）",
