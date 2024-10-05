@@ -3,14 +3,17 @@
         "recognition": "OCR",
         "expected": "TAPTOSTART",
         "action": "Click",
+        "post_delay": 500,
         "next": [
-            "领取登录奖励1"
+            "领取登录奖励1",
+            "领取登录奖励2"
         ]
     },
     "领取登录奖励1": {
         "recognition": "OCR",
         "expected": "术一獲得",
         "action": "Click",
+        "post_delay": 500,
         "next": [
             "领取登录奖励2"
         ]
@@ -19,6 +22,7 @@
         "recognition": "OCR",
         "expected": "术一獲得",
         "action": "Click",
+        "post_delay": 500,
         "next": [
             "关闭"
         ]
