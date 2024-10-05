@@ -1,0 +1,15 @@
+{
+    "controller": {
+        "name": "桌面端"
+    },
+    "resource": "Official",
+    "task": [
+        {
+            "name": "每日登录",
+            "option": []
+        }
+    ],
+    "win32": {
+        "hwnd": "0x110c7e"
+    }
+}
