@@ -1,0 +1,26 @@
+{
+    "bd领取邮件": {
+        "recognition": "TemplateMatch",
+        "template": "邮件.jpg",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "bd进入信箱",
+            "bd领取邮件"
+        ]
+    },
+    "bd进入信箱": {
+        "recognition": "OCR",
+        "expected": "普通信箱",
+        "post_delay": 200,
+        "next": [
+            "bd全部领取"
+        ]
+    },
+    "bd全部领取": {
+        "recognition": "OCR",
+        "expected": "全部领取",
+        "action": "Click",
+        "post_delay": 200
+    }
+}
